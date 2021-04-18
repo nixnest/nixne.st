@@ -1,0 +1,93 @@
+:root {
+  --bg: #000;
+  --fg: #fff;
+}
+
+/* Center content and give it a max width */
+body {
+	font-family: Inter, sans-serif;
+	padding: 2ch;
+	max-width: 80ch;
+	margin: 0 auto;
+	background: var(--bg);
+	color: var(--fg);
+}
+
+p, li {line-height: 1.5em;}
+
+/* Navbar */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2ch;
+}
+
+/* Logo positioning against logotype */
+.logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* Nav item positioning; fix wrap for narrow display */
+header nav {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Space out stuff in navbar */
+.logo > * {margin-right: 0.4em;}
+header nav > * {margin-left: 0.4em;}
+
+/* Link decor */
+a {
+	color: var(--fg);
+	text-decoration: none;
+}
+
+a:hover {
+	background: var(--fg);
+	color: var(--bg);
+}
+
+/* Create nested flexboxes for different sections */
+.member, .userLinks {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin: 0 -2ch;
+}
+
+/* Space out horizontal elements in flexboxes */
+.member > *, .userLinks > * {
+	margin: 0 2ch;
+}
+
+/* Standardize widths for info and avatar to fix wrapping */
+.member > .avatar {
+	width: 20ch;
+	border-radius: 0.5em;
+}
+
+.member > .info {
+	width: 56ch
+}
+
+/* User link icons */
+.userLinks a:hover {
+	opacity: 0.5;
+	background: none;
+}
+
+/* Disabled due to me being too lazy to implement color-changing SVGs
+@media (prefers-color-scheme: light) {
+	:root {
+		--fg: #000;
+		--bg: #fff;
+	}
+}
+*/
