@@ -1,9 +1,12 @@
 /*
 	GLOBAL
 */
+
 :root {
-  --bg: #000;
+  --bg: #111;
+  --bgLess: #222;
   --fg: #fff;
+  --accent: #FFFCEC;
 }
 
 /* Center content and give it a max width */
@@ -52,13 +55,43 @@ a {
 }
 
 a:hover {
-	background: var(--fg);
+	background: var(--accent);
 	color: var(--bg);
+}
+
+/*
+	MEMBER GRID
+*/
+
+.memberGrid {
+	display: grid;
+	grid-gap: 1em;
+	max-width: inherit;
+	grid-template-columns: repeat(auto-fit, minmax(10em, auto));
+	justify-content: center;
+}
+
+.card {
+	background: var(--bgLess);
+	flex-direction: column;
+	border-radius: 0.5em;
+}
+
+.card > * {
+	width: 100%;
+	border-radius: 0.5em 0.5em 0 0;
+}
+
+.card > p {
+	text-align: center;
+	margin: 0.5em 0;
+	font-weight: bold;
 }
 
 /*
 	PROFILE PAGE
 */
+
 /* Create nested flexboxes for different sections */
 .member, .userLinks {
 	display: flex;
