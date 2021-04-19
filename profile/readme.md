@@ -2,7 +2,10 @@
 
 ### "wat do?"
 
-Host this on your own webserver under your username.nixne.st subdomain. Make sure to set your user avatar by pasting your Discord user ID into the data-user-id field. You should also take a look at editing the link buttons at the bottom of the page. If unused, please remove them.
+Host this on your own webserver under
+`username.nixne.st/profile/`. Make sure to set your user avatar by pasting your Discord user ID into the data-user-id field. You should also take a look at editing the link buttons at the bottom of the page. If unused, please remove them.
+
+It's also recommended that you generate certificates with Lets Encrypt or something.
 
 ### Important notice
 
