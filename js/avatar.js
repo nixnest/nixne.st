@@ -1,3 +1,5 @@
 // Take in Discord ID from html tag and fetch user profile picture from Discord
-// BACKUP! Not currently used.
-fetch(`https://smol.nixne.st/avatar/${document.querySelector(".avatar").getAttribute("data-user-id")}`).then(r => r.text()).then(url => document.querySelector(".avatar").src = url)
+
+document.querySelectorAll(".avatar").forEach(avatar => fetch(`https://nixne.st/avatar/` + avatar.getAttribute("data-user-id")).then(r => r.text()).then(url => avatar.src = url));
+
+// vib chonk
