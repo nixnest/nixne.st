@@ -1,3 +1,6 @@
+/*
+	GLOBAL
+*/
 :root {
   --bg: #000;
   --fg: #fff;
@@ -53,6 +56,9 @@ a:hover {
 	color: var(--bg);
 }
 
+/*
+	PROFILE PAGE
+*/
 /* Create nested flexboxes for different sections */
 .member, .userLinks {
 	display: flex;
