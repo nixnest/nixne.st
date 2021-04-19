@@ -1,4 +1,4 @@
-# *nix nest profile template
+# \*nix nest profile template
 
 ### "wat do?"
 
