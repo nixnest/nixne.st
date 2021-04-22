@@ -145,6 +145,11 @@ a:hover {
 	background: none;
 }
 
+/* Shadows */
+.userLinks, .card:hover {
+	box-shadow: 0 0.5em 1em black;
+}
+
 /* Disabled due to me being too lazy to implement color-changing SVGs
 @media (prefers-color-scheme: light) {
 	:root {
