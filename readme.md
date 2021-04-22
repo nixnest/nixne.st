@@ -6,3 +6,4 @@ Please also add yourself to the homepage, following the template. Don't forget t
 * User ID for profile image
 * Username
 * Link to `username.nixne.st/profile/`
+	* The link format is only a suggestion, as long as it leads to something which hosts this profile template it is okay.
