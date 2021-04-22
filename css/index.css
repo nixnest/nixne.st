@@ -116,6 +116,10 @@ a:hover {
 	width: 56ch
 }
 
+.info > h1 {
+	margin-top: 0;
+}
+
 /* User link icons */
 .userLinks a:hover {
 	opacity: 0.5;
