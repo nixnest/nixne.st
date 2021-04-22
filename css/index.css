@@ -126,6 +126,15 @@ a:hover {
 	background: none;
 }
 
+.userLinks {
+	background-color: #222;
+	padding: 10px 5px 5px 5px;
+	border-radius: 24px;
+	width: fit-content;
+	margin: 2vh auto;
+	box-shadow: 0 5px 10px black;
+}
+
 /* Disabled due to me being too lazy to implement color-changing SVGs
 @media (prefers-color-scheme: light) {
 	:root {
