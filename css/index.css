@@ -113,9 +113,10 @@ a:hover {
 }
 
 .member > .info {
-	width: 56ch
+	max-width: 56ch;
 }
 
+/* Vertically aLign username with profile picture */
 .info > h1 {
 	margin-top: 0;
 }
