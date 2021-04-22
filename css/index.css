@@ -92,6 +92,12 @@ a:hover {
 	PROFILE PAGE
 */
 
+/* Create flex to prevent stretching of userLinks */
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
 /* Create nested flexboxes for different sections */
 .member, .userLinks {
 	display: flex;
@@ -121,19 +127,22 @@ a:hover {
 	margin-top: 0;
 }
 
+/* Background for links */
+.userLinks {
+	background: var(--bgLess);
+	padding: 0.5em;
+	border-radius: 2em;
+	align-self: center;
+}
+
 /* User link icons */
+.userLinks a, .userLinks img {
+	height: 1.5em;
+}
+
 .userLinks a:hover {
 	opacity: 0.5;
 	background: none;
-}
-
-.userLinks {
-	background-color: #222;
-	padding: 10px 5px 5px 5px;
-	border-radius: 24px;
-	width: fit-content;
-	margin: 2vh auto;
-	box-shadow: 0 5px 10px black;
 }
 
 /* Disabled due to me being too lazy to implement color-changing SVGs
