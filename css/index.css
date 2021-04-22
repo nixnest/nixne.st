@@ -129,7 +129,7 @@ a:hover {
 
 /* Background for links */
 .userLinks {
-	background: var(--bgLess);
+	background: #222;
 	padding: 0.5em;
 	border-radius: 2em;
 	align-self: center;
@@ -150,11 +150,11 @@ a:hover {
 	box-shadow: 0 0.5em 1em black;
 }
 
-/* Disabled due to me being too lazy to implement color-changing SVGs
 @media (prefers-color-scheme: light) {
 	:root {
 		--fg: #000;
-		--bg: #fff;
+		--bg: #eee;
+		--bgLess: #fff;
+		--accent: #222;
 	}
 }
-*/
